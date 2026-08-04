@@ -1,340 +1,74 @@
-/* ---------------------------------------------------------------
-   Yueqi Chen — personal homepage
-   --------------------------------------------------------------- */
-
-:root {
-  --bg:        #ffffff;
-  --bg-soft:   #f6f8fa;
-  --fg:        #1b1f24;
-  --fg-muted:  #5b6572;
-  --fg-faint:  #8b95a1;
-  --accent:    #14427c;
-  --accent-sf: #e8eff8;
-  --border:    #e2e6ea;
-  --highlight: #b3271f;
-  --maxw:      880px;
+﻿body, table {
+	font: 10pt Arial, Helvetica, sans-serif;
+	color: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:        #0f1419;
-    --bg-soft:   #161c23;
-    --fg:        #e4e8ee;
-    --fg-muted:  #9aa5b2;
-    --fg-faint:  #78828f;
-    --accent:    #7fb0ea;
-    --accent-sf: #16222f;
-    --border:    #242c36;
-    --highlight: #f08a80;
-  }
+.textmain { font: 10pt Arial, Helvetica, sans-serif;     
 }
 
-* { box-sizing: border-box; }
+.textbig { font: 13pt AvantGarde, Arial, Helvetica, sans-serif; }
 
-html { -webkit-text-size-adjust: 100%; }
+.text {	font: 10pt Arial, Helvetica, sans-serif;}
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+.textsmall { font: 8pt Arial, Helvetica, sans-serif; }
+
+
+.quote1 { font: italic 11pt Palatino, Times, serif; }
+.quote2 { font: bold italic 24pt Palatino, Times, serif; }
+
+
+.program li { margin-top: 4pt; }
+
+h1 {
+	font: bold 20pt AvantGarde, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 6pt;
+	margin-bottom: 12pt;
 }
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-a:hover { border-bottom-color: currentColor; }
-
-.wrap {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* --- top bar ---------------------------------------------------- */
-
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-}
-
-.topbar .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 20px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.topbar .brand {
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  color: var(--fg);
-  border: 0;
-  margin-right: auto;
-}
-
-.topbar nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 18px;
-  font-size: 14px;
-}
-
-.topbar nav a { color: var(--fg-muted); }
-.topbar nav a:hover { color: var(--accent); }
-
-/* --- masthead --------------------------------------------------- */
-
-.masthead {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  align-items: center;
-  padding: 44px 0 8px;
-}
-
-.masthead img {
-  width: 175px;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
-.masthead h1 {
-  margin: 0 0 6px;
-  font-size: 30px;
-  font-weight: 660;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.masthead .affil {
-  margin: 0;
-  color: var(--fg-muted);
-  font-size: 15.5px;
-}
-
-.masthead .affil .em { color: var(--fg); }
-
-/* --- notice ----------------------------------------------------- */
-
-.notice {
-  margin: 32px 0 8px;
-  padding: 14px 18px;
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--highlight);
-  border-radius: 8px;
-  color: var(--fg-muted);
-  font-size: 15px;
-}
-
-/* --- intro prose ------------------------------------------------ */
-
-.intro p { margin: 16px 0; }
-
-/* --- sections --------------------------------------------------- */
-
-section { padding-top: 14px; }
 
 h2 {
-  margin: 44px 0 18px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
-  font-weight: 660;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  color: var(--accent);
+	font: bold 14pt AvantGarde, Arial, Helvetica, sans-serif;
+	color: #000000;
+	/* background: #D4D4DD; */
+	margin-top: 16pt;
+	margin-bottom: 9pt;
+	/* padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: .25em; */
 }
 
 h3 {
-  margin: 28px 0 12px;
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: 0.01em;
-  color: var(--fg-muted);
+	font: bold 11pt AvantGarde, Arial, Helvetica, sans-serif;
+	margin-top: 1.25em;
+	margin-bottom: 4pt;
+	/* color: #CC0000; */
 }
 
-/* --- news ------------------------------------------------------- */
-
-.news { margin: 0; }
-
-.news div {
-  display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 0 14px;
-  padding: 5px 0;
+h4 {
+	font: bold 10pt AvantGarde, Arial, Helvetica, sans-serif;
+	margin-top: 1em;
+	margin-bottom: 3pt;
+	/* color: #CC0000; */
 }
 
-.news dt {
-  color: var(--fg-faint);
-  font-size: 14px;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
+.subhead {
+	font: bold 13pt AvantGarde, Arial, Helvetica, sans-serif;
+	color: #000066;
+	background: #CCCCFF;
 }
 
-.news dd { margin: 0; }
+.text a, .textmain a {
+	font-weight: bold;
+	text-decoration: none;
+}
+p {
+    text-align: left;
+    margin-left:10px; 
+    margin-right:10px;
+    margin-top:10px; 
+    margin-bottom:10px;
 
-/* --- generic entry lists (team, teaching, awards, services) ------ */
-
-.entries {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.entries > li {
-  padding: 9px 0;
-  border-bottom: 1px solid var(--border);
-}
 
-.entries > li:last-child { border-bottom: 0; }
-
-.entries .who { font-weight: 600; }
-
-.entries .meta,
-.entries .sub {
-  display: block;
-  color: var(--fg-muted);
-  font-size: 14.5px;
-}
-
-.entries .venues {
-  display: block;
-  color: var(--fg-faint);
-  font-size: 13.5px;
-}
-
-.entries .role {
-  font-weight: 600;
-  color: var(--fg);
-}
-
-/* --- publications ----------------------------------------------- */
-
-.pubs {
-  margin: 0;
-  padding: 0 0 0 2.4em;
-}
-
-.pubs > li {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.pubs > li:last-child { border-bottom: 0; }
-
-.pubs > li::marker {
-  color: var(--fg-faint);
-  font-size: 14px;
-  font-variant-numeric: tabular-nums;
-}
-
-.pubs .title {
-  display: block;
-  font-weight: 600;
-  line-height: 1.45;
-}
-
-.pubs .authors {
-  display: block;
-  color: var(--fg-muted);
-  font-size: 14.5px;
-}
-
-.pubs .venue {
-  display: block;
-  color: var(--fg-muted);
-  font-size: 14.5px;
-  font-style: italic;
-}
-
-.pubs .note {
-  display: block;
-  color: var(--fg-faint);
-  font-size: 13.5px;
-}
-
-.pubs b { font-weight: 660; color: var(--fg); }
-
-u, .student {
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-}
-
-.award {
-  color: var(--highlight);
-  font-size: 13.5px;
-  font-weight: 600;
-}
-
-/* --- link chips ------------------------------------------------- */
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 7px;
-}
-
-.links a,
-.links span {
-  display: inline-block;
-  padding: 1px 9px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 12.5px;
-  line-height: 1.7;
-  color: var(--accent);
-  background: var(--bg-soft);
-}
-
-.links a:hover {
-  border-color: var(--accent);
-  background: var(--accent-sf);
-}
-
-.links span {
-  color: var(--fg-faint);
-  background: transparent;
-}
-
-/* --- footer ----------------------------------------------------- */
-
-footer {
-  margin-top: 56px;
-  padding: 22px 0 36px;
-  border-top: 1px solid var(--border);
-  color: var(--fg-faint);
-  font-size: 13.5px;
-}
-
-/* --- small screens ---------------------------------------------- */
-
-@media (max-width: 640px) {
-  body { font-size: 15.5px; }
-  .wrap { padding: 0 18px; }
-  .masthead {
-    gap: 22px;
-    padding-top: 30px;
-    text-align: center;
-    justify-content: center;
-  }
-  .masthead img { width: 145px; }
-  .masthead h1 { font-size: 26px; }
-  .news div { grid-template-columns: 1fr; gap: 0; }
-  .news dt { font-size: 13px; }
-  .pubs { padding-left: 1.5em; }
-}
